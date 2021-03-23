@@ -6,9 +6,8 @@ package com.zzy;
  */
 public class Test {
     public static void main(String[] args) {
-        String[] result = "test.zip".split("\\.");
-        for (String s : result) {
-            System.out.println(s);
-        }
+        String tmp = "123.zip";
+        int index = tmp.lastIndexOf(".");
+        System.out.println(tmp.substring(index+1));
     }
 }
